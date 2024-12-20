@@ -3,3 +3,20 @@
 @tailwind utilities;
 
 
+.loading{
+  animation-name: load;
+  animation-duration: 2s; /* Adjust as needed */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  
+  
+}
+
+@keyframes load {
+  0%   {background-color:red;  transform: rotate(20deg);}
+  15%  {background-color:black; transform: rotate(60deg);}
+  30%  {background-color:red;  transform: rotate(80deg);}
+  60%  {background-color:black;  transform: rotate(180deg);}
+  80%  {background-color:red;  transform: rotate(250deg);}
+  100% {background-color:red; left:0px; top:0px; transform: rotate(360deg);}
+}
