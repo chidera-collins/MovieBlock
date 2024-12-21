@@ -110,14 +110,7 @@ function Movies() {
 
                         <div className='min-h-[10px] w-full bg-purple-100 text-black px-1 flex justify-between items-center'>
                          <h1 className='text-ellipsis whitespace-nowrap overflow-hidden text-1xl font-bold text-center text-[1.2rem]'>{item.original_title}</h1>
-                         {/* <button className="text-black text-[1.2rem] show">:</button> */}
-                            {/* <div className=" min-h-[10px] bg-green-600 max-w-32 items absolute bottom-2 right-0">
-                            <ul className="text-white ">
-                            <li className="hover:bg-green-800 p-1 cursor-pointer">Add to List</li>
-                            <li className="hover:bg-green-800 p-1 cursor-pointer">View</li>
-                            <li className="hover:bg-green-800 p-1 cursor-pointer">Like</li>
-                            </ul>
-                            </div> */}
+                      
 
                         </div>
                        

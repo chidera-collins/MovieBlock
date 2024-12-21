@@ -11,6 +11,8 @@ function MovieDtails() {
     const navigate = useNavigate();
 
 
+   
+
     useEffect(()=>{
         if (!location.state || !location.state.movie) {
             navigate('/');
@@ -83,6 +85,10 @@ function MovieDtails() {
         setMyList((prevList)=>prevList.filter((item) =>item.id !== movieid))
     }
 
+    const movieMainss =(movie)=>{
+        navigate('/Mylist',{state:{movie}})
+    }
+
 
 
   return (
@@ -129,7 +135,9 @@ function MovieDtails() {
                 <div className='grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-3'>
                      {mylist.length > 0 ? (
                             mylist.map((item) => (
-                                <div key={item.id} className='p-2 rounded-lg'>
+                                <div key={item.id}
+                                onClick={()=>movieMainss(item)}
+                                 className='p-2 rounded-lg'>
                                     <img
                                         src={`https://image.tmdb.org/t/p/w200${item.poster_path}`}
                                         alt={item.original_title}
