@@ -93,7 +93,7 @@ function Movies() {
                         </select>
                 </div>
                 <div>
-                    <input type="search" name="" id="" placeholder='search '   value={search}
+                    <input type="search" name="" id="" placeholder='search ' className='max-w-28'   value={search}
                     onChange={(e) => setSearch(e.target.value)} />
                 </div>
 
