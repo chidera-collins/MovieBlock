@@ -82,11 +82,11 @@ function Movies() {
                 <div>
                     <span className='dark:text-white text-white'>Sort by:</span>
                         <select
-                            className="max-w-36 select bg-bodybg text-boldtext font-custom font-bold text-[1rem]"
+                            className="max-w-28 select bg-bodybg text-boldtext font-custom font-bold text-[1rem]"
                             value={options}
                             onChange={(e) => setOptions(e.target.value)}
                         >
-                            <option></option>
+                            <option ></option>
                             <option>All</option>
                             <option>Rating</option>
                             <option>Popularity</option>
